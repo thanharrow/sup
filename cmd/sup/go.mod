@@ -1,9 +1,9 @@
-module github.com/thanharrow/sup/cmd/sup
+module github.com/thanharrow/sup/cmd/supcmd
 
-go 1.23.0
+go 1.21.5
 
 require (
-	github.com/arrowltd/sup v0.0.0-20240313032028-6d7007a6894b
+	github.com/thanharrow/sup v0.0.0-20240313032028-6d7007a6894b
 	github.com/mikkeloscar/sshconfig v0.1.1
 	github.com/pkg/errors v0.9.1
 )

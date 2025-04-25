@@ -1,4 +1,4 @@
-module github.com/arrowltd/sup
+module github.com/thanharrow/sup
 
 go 1.18
 
