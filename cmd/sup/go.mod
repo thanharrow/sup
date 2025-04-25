@@ -1,6 +1,6 @@
 module github.com/thanharrow/sup/cmd/sup
 
-go 1.21.5
+go 1.23.0
 
 require (
 	github.com/arrowltd/sup v0.0.0-20240313032028-6d7007a6894b
