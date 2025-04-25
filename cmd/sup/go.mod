@@ -1,4 +1,4 @@
-module github.com/arrowltd/sup/cmd/supcmd
+module github.com/thanharrow/sup/cmd/sup
 
 go 1.21.5
 
