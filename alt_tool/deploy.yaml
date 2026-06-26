@@ -1,0 +1,32 @@
+# deploy.yaml - Configuration for deploy.sh tool
+---
+env:
+  APP_NAME: "my-app"
+  GLOBAL_VAR: "global-value"
+
+networks:
+  local:
+    hosts:
+      - localhost
+    env:
+      NETWORK_VAR: "local-network-value"
+  production:
+    hosts:
+      - prod1.example.com
+      - prod2.example.com
+    private_key_file: "~/.ssh/id_rsa"
+    env:
+      NETWORK_VAR: "production-network-value"
+
+commands:
+  hello:
+    run: echo "Hello from $APP_NAME! Global:$GLOBAL_VAR Network:$NETWORK_VAR"
+  hostname:
+    run: hostname
+  uptime:
+    run: uptime
+
+targets:
+  status:
+    - hostname
+    - uptime
